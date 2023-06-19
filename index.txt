@@ -55,7 +55,7 @@ Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dol
 
 <i class="flaticon-salon"></i>
 
-Hair Cutting Style
+Limpiezas faciales
 
 Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 

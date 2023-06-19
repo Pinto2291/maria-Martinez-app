@@ -312,7 +312,7 @@
   .logo {
     color: var(--indian-yellow);
     font-family: var(--ff-oswald);
-    font-size: 2.7rem;
+    font-size: 2.35rem;
     font-weight: var(--fw-600);
     text-transform: uppercase;
     line-height: 1.4;
@@ -438,10 +438,6 @@
     background-color: var(--indian-yellow);
     color: var(--white);
   }
-  
-  
-  
-  
   
   /*-----------------------------------*\
     #PRICING

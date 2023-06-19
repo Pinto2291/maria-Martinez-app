@@ -1,72 +1,38 @@
 'use strict';
 
+/* REVEAL MENU */
 
 $('.nav-toggle-btn').on('click', () => {
   $('#data-navbar').slideDown('slow');
 })
 
+/* CLOSE MENU */
 
-/**
- * add event on element
- */
-
-/*
-const addEventOnElem = function (elem, type, callback) {
-  if (elem.length > 1) {
-    for (let i = 0; i < elem.length; i++) {
-      console.log(elem[i])
-      elem[i].addEventListener(type, callback);
-    }
-  } else {
-    console.log(elem)
-    elem.addEventListener(type, callback);
-  }
-}
-*/
-
-
-/* navbar toggle */
-
-const navbar = document.querySelector(".data-navbar");
-const navToggler = document.querySelector("[data-nav-toggler]");
-const navLinks = document.querySelectorAll(".navbar-item");
-console.log(navbar)
-console.log(navToggler)
-console.log(navLinks)
-
-navToggler.addEventListener('click', () => {
-  return navbar.classList.toggle("active");
+$('.nav-toggle-btn').on('click', () => {
+  $('#data-navbar').toggleClass('active')
 })
 
-//addEventOnElem(navToggler, "click", toggleNavbar);
-
-navLinks.forEach(item => item.addEventListener('click', () => {
-  navbar.classList.remove("active");
-}))
-
-//addEventOnElem(navLinks, "click", closeNavbar);
-
-
+$('.navbar-item').on('click', () => {
+  $('#data-navbar').toggleClass('active')
+})
 
 /* header & back top btn active when scroll down to 100px */
 
-/*
+//const backTopBtn = document.querySelector("[data-back-top-btn]");
 
-const header = document.querySelector("[data-header]");
-const backTopBtn = document.querySelector("[data-back-top-btn]");
-
-const headerActive = function () {
+const headerActive = function() {
   if (window.scrollY > 100) {
-    header.classList.add("active");
-    backTopBtn.classList.add("active");
+    $('#header-bottom').addClass("active");
+    //backTopBtn.addClass("active");
   } else {
-    header.classList.remove("active");
-    backTopBtn.classList.remove("active");
+    $('#header-bottom').removeClass("active");
+    //backTopBtn.removeClass("active");
   }
 }
 
-addEventOnElem(window, "scroll", headerActive);
-*/
+window.addEventListener('scroll', () => {
+  headerActive()
+})
 
 
 /* filter function */
