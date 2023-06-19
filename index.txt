@@ -81,29 +81,29 @@ Multi Hair Colors
 
 #---------- PRICING ----------#
 
-Awesome Pricing Plan
+Increibles Precios
 
 Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
 
 filter = all
 <i class="flaticon-beauty-salon" aria-hidden="true"></i>
-All Pricing
+Todos los precios
 
-filter = beauty-spa
+filter = belleza-spa
 <i class="flaticon-relax" aria-hidden="true"></i>
-Beauty & Spa
+Belleza & Spa
 
-filter = body-treatments
+filter = tratamientos-corporales
 <i class="flaticon-massage" aria-hidden="true"></i>
-Body Treatments
+Tratamientos corporales
 
-filter = face-washing
+filter = limpieza-facial
 <i class="flaticon-spa" aria-hidden="true"></i>
-Face Washing
+Lavado Facial
 
-filter = meditations
+filter = tratamientos-capilares
 <i class="flaticon-yoga" aria-hidden="true"></i>
-Meditations
+Tratamientos Capilares
 
 filter = shaving
 <i class="flaticon-razor-blade" aria-hidden="true"></i>

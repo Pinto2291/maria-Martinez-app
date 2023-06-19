@@ -18,8 +18,6 @@ $('.navbar-item').on('click', () => {
 
 /* header & back top btn active when scroll down to 100px */
 
-//const backTopBtn = document.querySelector("[data-back-top-btn]");
-
 const headerActive = function() {
   if (window.scrollY > 100) {
     $('#header-bottom').addClass("active");
@@ -35,22 +33,26 @@ window.addEventListener('scroll', () => {
 })
 
 
+/* VIDEO 1:07:35 */
+
 /* filter function */
 
-/*
+
 const filterBtns = document.querySelectorAll("[data-filter-btn]");
 const filterItems = document.querySelectorAll("[data-filter]");
 
 let lastClickedFilterBtn = filterBtns[0];
 
-const filter = function () {
-  lastClickedFilterBtn.classList.remove("active");
-  this.classList.add("active");
-  lastClickedFilterBtn = this;
+console.log(lastClickedFilterBtn)
+
+const filter = function(n) {
+  lastClickedFilterBtn.classList.remove('active');
+  n.classList.add("active");
+  lastClickedFilterBtn = n;
 
   for (let i = 0; i < filterItems.length; i++) {
-    if (this.dataset.filterBtn === filterItems[i].dataset.filter ||
-      this.dataset.filterBtn === "all") {
+    if (n.dataset.filterBtn === filterItems[i].dataset.filter ||
+      n.dataset.filterBtn === "all") {
 
       filterItems[i].style.display = "block";
       filterItems[i].classList.add("active");
@@ -64,6 +66,6 @@ const filter = function () {
   }
 }
 
-addEventOnElem(filterBtns, "click", filter);
-
-*/
+filterBtns.forEach(item => item.addEventListener('click', () => {
+  filter();
+}));
