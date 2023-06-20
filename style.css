@@ -158,6 +158,10 @@
   /*-----------------------------------*\
     #REUSED STYLE
   \*-----------------------------------*/
+
+  .show {
+    display: block;
+  }
   
   .container { padding-inline: 15px; }
   

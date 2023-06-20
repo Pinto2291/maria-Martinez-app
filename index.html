@@ -268,8 +268,8 @@
 
                     <ul class="tab-filter">
 
-                        <li>
-                            <button class="filter-btn active" data-filter-btn="all">
+                        <li class="filter-button">
+                            <button class="filter-btn active" data-filter-btn="all" onclick="filterResult('todos')">
 
                                 <div class="btn-icon">
                                     <i class="flaticon-beauty-salon" aria-hidden="true"></i>
@@ -279,8 +279,8 @@
                             </button>
                         </li>
 
-                        <li>
-                            <button class="filter-btn" data-filter-btn="belleza-spa">
+                        <li class="filter-button">
+                            <button class="filter-btn spa" data-filter-btn="belleza-spa" onclick="filterResult('spa')">
                                 
                                 <div class="btn-icon">
                                     <i class="flaticon-relax" aria-hidden="true"></i>
@@ -290,8 +290,8 @@
                             </button>
                         </li>
 
-                        <li>
-                            <button class="filter-btn" data-filter-btn="masajes">
+                        <li class="filter-button">
+                            <button class="filter-btn masajes" data-filter-btn="masajes" onclick="filterResult('masajes')">
                                 
                                 <div class="btn-icon">
                                     <i class="flaticon-massage" aria-hidden="true"></i>
@@ -301,8 +301,8 @@
                             </button>
                         </li>
 
-                        <li>
-                            <button class="filter-btn" data-filter-btn="limpieza-facial">
+                        <li class="filter-button">
+                            <button class="filter-btn facial" data-filter-btn="limpieza-facial" onclick="filterResult('facial')">
                                 
                                 <div class="btn-icon">
                                     <i class="flaticon-spa" aria-hidden="true"></i>
@@ -312,8 +312,8 @@
                             </button>
                         </li>
 
-                        <li>
-                            <button class="filter-btn" data-filter-btn="tratamientos-capilares">
+                        <li class="filter-button">
+                            <button class="filter-btn capilar" data-filter-btn="tratamientos-capilares" onclick="filterResult('capilar')">
                                 
                                 <div class="btn-icon">
                                     <i class="flaticon-beauty-salon" aria-hidden="true"></i>
@@ -328,7 +328,7 @@
 
                     <ul class="grid-list">
 
-                        <li class="data-filter-option" data-filter='belleza-spa'>
+                        <li class="data-filter-option spa" data-filter='belleza-spa'>
                             <div class="pricing-card">
                                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                                     <img src="./img/small images/belleza y spa.jpeg" width="100" height="100" alt="belleza & spa" class="img-holder">
@@ -344,7 +344,7 @@
                             </div>
                         </li>
 
-                        <li class="data-filter-option" data-filter='masajes'>
+                        <li class="data-filter-option masajes" data-filter='masajes'>
                             <div class="pricing-card">
                                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                                     <img src="./img/small images/masajes.jpeg" width="100" height="100" alt="masajes" class="img-holder">
@@ -360,7 +360,7 @@
                             </div>
                         </li>
 
-                        <li class="data-filter-option" data-filter='limpieza-facial'>
+                        <li class="data-filter-option facial" data-filter='limpieza-facial'>
                             <div class="pricing-card">
                                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                                     <img src="./img/small images/limpieza facial (1).jpeg" width="100" height="100" alt="limpieza facial" class="img-holder">
@@ -376,7 +376,7 @@
                             </div>
                         </li>
 
-                        <li class="data-filter-option" data-filter='tratamientos-capilares'>
+                        <li class="data-filter-option capilar" data-filter='tratamientos-capilares'>
                             <div class="pricing-card">
                                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                                     <img src="./img/small images/tratamiento capilar.jpeg" width="100" height="100" alt="tratamientos capilares" class="img-holder">
@@ -402,6 +402,8 @@
 
         </article>
     </main>
+
+    <p class="new-text color-class">text nuevo</p>
 
     <!-- custom js link -->
 
